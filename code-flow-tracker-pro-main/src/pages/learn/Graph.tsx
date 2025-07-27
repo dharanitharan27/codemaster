@@ -17,7 +17,8 @@ void dfs(vector<vector<int>>& head, vector<bool>& visited, int start, vector<str
         if (!visited[i])
             dfs(head, visited, i, names);
     }
-}`}          </pre>
+}`}
+          </pre>
           <p className="mt-2 text-sm font-mono">
             <strong>Input:</strong> names = ["A", "B", "C", "D"], edges = [(0,1), (0,2), (1,3)], start = 0<br />
             <strong>Output:</strong> A B D C
@@ -46,9 +47,10 @@ void bfs(map<string, vector<string>>& graph, string start) {
             }
         }
     }
-}`}          </pre>
+}`}
+          </pre>
           <p className="mt-2 text-sm font-mono">
-            <strong>Input:</strong> graph = {"A": ["B", "C"], "B": ["D"], "C": [], "D": []}, start = "A"<br />
+            <strong>Input:</strong> graph = {"{A: [B, C], B: [D], C: [], D: []}"}, start = "A"<br />
             <strong>Output:</strong> A B C D
           </p>
         </CardContent>
@@ -82,7 +84,8 @@ vector<int> topoSort(int n, vector<vector<int>>& graph) {
         st.pop();
     }
     return res;
-}`}          </pre>
+}`}
+          </pre>
           <p className="mt-2 text-sm font-mono">
             <strong>Input:</strong> n = 6, edges = [(5,2),(5,0),(4,0),(4,1),(2,3),(3,1)]<br />
             <strong>Output:</strong> 4 5 2 3 1 0 (One possible order)
